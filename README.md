@@ -5,12 +5,15 @@ The "data_preprocessing.py" file consists of the implementation of "get_splits" 
 Working of the function is shown in "main.ipynb" file. The data set used is available in "train.csv".
 
 
+
 Input to "get_splits" function:
   - Input data (pandas dataframe)
   - target variable name (string)
   - parameters
  
  
+
+
 Following the operations done by the function,
   
   1. Split the data into train, test and valid based on the size mentioned by fraction parameter. By default it is (80%, 10%, 10% split). Only training and testting datasets
@@ -25,6 +28,8 @@ Following the operations done by the function,
   5. Categorial columns consisting of missing values are replace with in place encoding. It is set by setting the "cat_fill_NA" parameter to "True". By default it is "False".
   
   6. The data is normalized by "mean-Normalization" or "Min-Max-Normalization". It is set with "normalize" parameter. By default it is None.
+
+
 
 
 Output from "get_splits" function:
